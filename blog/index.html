@@ -1,0 +1,567 @@
+<!-- ========================================
+     FILE: /blog/index.html
+     ======================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read the latest insights, stories, and updates from the ScriptySphere community.">
+  <meta name="keywords" content="ScriptySphere blog, tech articles, youth innovation, Bangladesh technology, digital literacy, coding, community impact">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="en-BD">
+  <meta name="geo.region" content="BD">
+  <meta name="geo.placename" content="Bangladesh">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ScriptySphere Blog – Youth Innovation & Technology">
+  <meta property="og:description" content="Stories and insights from our community of innovators leading the tech revolution in Bangladesh.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.scriptysphere.org/blog/">
+  <meta property="og:image" content="https://www.scriptysphere.org/assets/img/blog/cover.webp">
+  <meta property="og:site_name" content="ScriptySphere">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ScriptySphere Blog – Youth Innovation & Technology">
+  <meta name="twitter:description" content="Explore the latest updates and stories from the ScriptySphere community.">
+  <meta name="twitter:image" content="https://www.scriptysphere.org/assets/img/blog/cover.webp">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.scriptysphere.org/blog/">
+
+  <!-- Performance Optimisation -->
+  <link rel="preload" href="/assets/css/xyz.css" as="style">
+  <link rel="dns-prefetch" href="https://www.scriptysphere.org">
+  <link rel="preconnect" href="https://www.scriptysphere.org" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- PWA & Mobile -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0EA5E9">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="ScriptySphere">
+  <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png">
+
+  <title>Blog - ScriptySphere</title>
+
+  <!-- Schema: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ScriptySphere Blog",
+    "url": "https://www.scriptysphere.org/blog/",
+    "description": "Read stories, insights, and updates from the ScriptySphere community of innovators.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ScriptySphere",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.scriptysphere.org/assets/img/logo.webp"
+      }
+    }
+  }
+  </script>
+
+  <!-- Schema: Organisation (Brand credibility) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ScriptySphere",
+    "url": "https://www.scriptysphere.org",
+    "sameAs": [
+      "https://www.facebook.com/scriptysphere",
+      "https://www.linkedin.com/company/scriptysphere"
+    ]
+  }
+  </script>
+</head>
+<body>
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Advanced Navigation Bar -->
+    <nav class="ss-navbar-container">
+        <div class="ss-navbar">
+            <!-- Brand/Logo -->
+            <a href="/index.html" class="ss-navbar-brand">
+                <div class="ss-logo-icon"></div>
+                <span class="ss-brand-text">ScriptySphere</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="ss-navbar-nav" id="ssNavbarNav">
+                <li class="ss-nav-item">
+                    <a href="/index.html" class="ss-nav-link active">
+                        <svg class="ss-nav-icon" viewBox="0 0 24 24">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="ss-nav-item">
+                    <a href="/about/" class="ss-nav-link">
+                        <svg class="ss-nav-icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="ss-nav-item">
+                    <a href="/programmes/" class="ss-nav-link">
+                        <svg class="ss-nav-icon" viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <span>Programmes</span>
+                    </a>
+                </li>
+                <li class="ss-nav-item">
+                    <a href="/blog/" class="ss-nav-link">
+                        <svg class="ss-nav-icon" viewBox="0 0 24 24">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="ss-nav-item">
+                    <a href="/contact/" class="ss-nav-link">
+                        <svg class="ss-nav-icon" viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li class="ss-nav-item">
+                    <a href="/member/" class="ss-cta-button">
+                        Join Us
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Toggle -->
+            <button class="ss-mobile-toggle" id="ssMobileToggle">
+                <div class="ss-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="ss-mobile-menu-overlay" id="ssMobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="ss-mobile-menu" id="ssMobileMenu">
+        <div class="ss-mobile-menu-header">
+            <a href="/index.html" class="ss-mobile-menu-brand">
+                <div class="ss-logo-icon"></div>
+                <span class="ss-brand-text">ScriptySphere</span>
+            </a>
+            <button class="ss-mobile-menu-close" id="ssMobileMenuClose">
+                <span>×</span>
+            </button>
+        </div>
+        
+        <ul class="ss-mobile-menu-nav">
+            <li class="ss-mobile-menu-item">
+                <a href="/index.html" class="ss-mobile-menu-link active">
+                    <svg class="ss-mobile-menu-icon" viewBox="0 0 24 24">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                    </svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="ss-mobile-menu-item">
+                <a href="/about/" class="ss-mobile-menu-link">
+                    <svg class="ss-mobile-menu-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="ss-mobile-menu-item">
+                <a href="/programmes/" class="ss-mobile-menu-link">
+                    <svg class="ss-mobile-menu-icon" viewBox="0 0 24 24">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <span>Programmes</span>
+                </a>
+            </li>
+            <li class="ss-mobile-menu-item">
+                <a href="/blog/" class="ss-mobile-menu-link">
+                    <svg class="ss-mobile-menu-icon" viewBox="0 0 24 24">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li class="ss-mobile-menu-item">
+                <a href="/contact/" class="ss-mobile-menu-link">
+                    <svg class="ss-mobile-menu-icon" viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="ss-mobile-cta">
+            <a href="/community/members.html" class="ss-mobile-cta-button">
+                Join Us
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ==================== SCROLL PROGRESS BAR ==================== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  
+  <!-- ==================== ANIMATED BACKGROUND ==================== -->
+  <div class="animated-background" aria-hidden="true">
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+    <div class="bg-gradient-mesh"></div>
+  </div>
+  
+  <!-- ==================== HERO SECTION ==================== -->
+  <header class="hero-section">
+    <div class="container">
+      
+      <!-- Logo & Brand -->
+      <div class="brand-container" data-aos="fade-down">
+        <!-- Animated SVG Logo -->
+        <div class="logo-container">
+
+        </div>
+        
+        <!-- Brand Name -->
+        <h1 class="brand-name">
+          <span class="brand-text-gradient">Scripty</span><span class="brand-text-gradient-alt">Sphere</span>
+        </h1>
+        <p class="brand-tagline">Scripting Stories of Change</p>
+      </div>
+      
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h2 class="hero-title" data-aos="fade-up">
+          Our <span class="title-highlight">Blog</span>
+        </h2>
+        <p class="hero-description" data-aos="fade-up" data-aos-delay="100">
+          Discover inspiring stories, insights, and updates from our journey of empowering youth and children across Bangladesh
+        </p>
+      </div>
+      
+      <!-- Search & Filter Bar -->
+      <div class="search-filter-bar" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- Search Box -->
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input 
+            type="search" 
+            id="searchInput" 
+            placeholder="Search articles..." 
+            aria-label="Search blog articles"
+            autocomplete="off"
+          >
+        </div>
+        
+        <!-- Category Filter -->
+        <div class="category-filter">
+          <button class="filter-btn active" data-category="all" aria-label="Show all articles">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            All
+          </button>
+          <button class="filter-btn" data-category="education" aria-label="Filter by Education">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            Education
+          </button>
+          <button class="filter-btn" data-category="technology" aria-label="Filter by Technology">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            Technology
+          </button>
+          <button class="filter-btn" data-category="community" aria-label="Filter by Community">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            Community
+          </button>
+          <button class="filter-btn" data-category="events" aria-label="Filter by Events">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Events
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+  
+  <!-- ==================== FEATURED POST SECTION ==================== -->
+  <section class="featured-section" id="featuredSection">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Featured Story</h2>
+        <p class="section-subtitle">Our latest highlight</p>
+      </div>
+      
+      <!-- Featured Post Card (Will be populated by JavaScript) -->
+      <div id="featuredPost" class="featured-post" data-aos="fade-up" data-aos-delay="100">
+        <!-- Dynamically loaded by JS -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- ==================== BLOG POSTS GRID SECTION ==================== -->
+  <section class="blog-section">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Latest Articles</h2>
+        <p class="section-subtitle">Stay updated with our stories</p>
+      </div>
+      
+      <!-- Blog Posts Grid (Will be populated by JavaScript) -->
+      <div id="blogGrid" class="blog-grid">
+        <!-- Dynamically loaded by JS -->
+      </div>
+      
+      <!-- Empty State (Hidden by default) -->
+      <div id="emptyState" class="empty-state" style="display: none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <h3>No articles found</h3>
+        <p>Try adjusting your search or filter to find what you're looking for</p>
+      </div>
+      
+      <!-- Load More Button -->
+      <div class="load-more-container" id="loadMoreContainer">
+        <button class="btn-load-more" id="loadMoreBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+          Load More Articles
+        </button>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- ==================== NEWSLETTER SECTION ==================== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-card" data-aos="zoom-in">
+        <div class="newsletter-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest stories and updates delivered to your inbox</p>
+        
+        <!-- Newsletter Form -->
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="form-group">
+            <input 
+              type="email" 
+              id="emailInput" 
+              placeholder="Enter your email address" 
+              required
+              aria-label="Email address"
+            >
+            <button type="submit" class="btn-subscribe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Subscribe
+            </button>
+          </div>
+          <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ==================== CATEGORIES SECTION ==================== -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Explore by Category</h2>
+        <p class="section-subtitle">Find content that interests you</p>
+      </div>
+      
+      <!-- Categories Grid -->
+      <div class="categories-grid" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="category-card" data-category="education">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+          <h3>Education</h3>
+          <p class="category-count" data-category-count="education">12 Articles</p>
+        </div>
+        
+        <div class="category-card" data-category="technology">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3>Technology</h3>
+          <p class="category-count" data-category-count="technology">8 Articles</p>
+        </div>
+        
+        <div class="category-card" data-category="community">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Community</h3>
+          <p class="category-count" data-category-count="community">15 Articles</p>
+        </div>
+        
+        <div class="category-card" data-category="events">
+          <div class="category-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3>Events</h3>
+          <p class="category-count" data-category-count="events">6 Articles</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+  
+
+
+  <!-- Footer (loaded from partial) -->
+  <div data-include="footer"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="/assets/js/blog.js"></script>
+  <script type="module" src="/assets/js/footer.js"></script>
+  <script type="module" src="/assets/js/header.js"></script>
+  <script type="module" src="/assets/js/main.js"></script>
+    <!-- AOS Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>
