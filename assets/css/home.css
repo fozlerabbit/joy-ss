@@ -27,6 +27,7 @@
   --gradient-1: linear-gradient(135deg, #0EA5E9 0%, #06B6D4 100%);
   --gradient-2: linear-gradient(135deg, #8B5CF6 0%, #06B6D4 100%);
   --gradient-3: linear-gradient(135deg, #10B981 0%, #0EA5E9 100%);
+  --gradient-4: linear-gradient(135deg, #b39f9f 0%, #fafafa 100%);
   
   /* Spacing */
   --space-xs: 0.5rem;
@@ -122,14 +123,14 @@ body {
 .floating-shape {
   position: absolute;
   border-radius: var(--radius-full);
-  opacity: 0.1;
+  opacity: 0.8;
   animation: float 20s infinite ease-in-out;
 }
 
 .shape-1 {
   width: 300px;
   height: 300px;
-  background: var(--gradient-1);
+  background: var(--gradient-4);
   top: 10%;
   left: 10%;
   animation-delay: 0s;
@@ -289,7 +290,7 @@ body {
 .gradient-text-animated {
   background: var(--gradient-1);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   background-clip: text;
   background-size: 200% 200%;
   animation: gradientMove 5s ease infinite;
@@ -536,7 +537,7 @@ section {
   display: inline-block;
   padding: var(--space-xs) var(--space-lg);
   background: rgba(14, 165, 233, 0.1);
-  color: var(--primary);
+  color: white;
   border-radius: var(--radius-full);
   font-size: var(--font-size-sm);
   font-weight: 600;
@@ -560,7 +561,7 @@ section {
 .gradient-text {
   background: var(--gradient-1);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   background-clip: text;
 }
 
@@ -886,6 +887,7 @@ section {
   background: var(--gradient-1);
   color: var(--white);
   padding: var(--space-4xl) 0;
+  opacity: 0.8;
 }
 
 .cta-content {
