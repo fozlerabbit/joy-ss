@@ -61,19 +61,19 @@ const membersData = [
   },
   {
     "id": 2,
-    "name": "Afsana Rahman",
-    "role": "Volunteer Lead",
+    "name": "Raiyan",
+    "role": "Member",
     "division": "Dhaka",
-    "district": "Dhaka",
+    "district": "Gazipur",
     "photo": "https://ui-avatars.com/api/?name=Afsana+Rahman&background=06B6D4&color=fff&size=200",
     "skills": [
-      "Community Building",
+      "Video Editing",
       "Event Management",
       "Coordination"
     ],
-    "email": "afsana@scriptysphere.org",
-    "phone": "+880 1700-123456",
-    "joinedDate": "2020-03-20",
+    "email": "raiyan@scriptysphere.com",
+    "phone": "+880 1741-585329",
+    "joinedDate": "2025-11-19",
     "bio": "Leading volunteer programmes and community engagement initiatives."
   },
   {
