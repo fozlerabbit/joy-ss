@@ -430,7 +430,7 @@ body {
   position: relative;
   height: 120px;
   background: var(--gradient-1);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .member-card-header::before {
