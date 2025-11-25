@@ -66,7 +66,7 @@ const membersData = [
     "role": "Social Media Manager",
     "division": "Mymensingh",
     "district": "Mymensingh",
-    "photo": "mehidi.jpeg",
+    "photo": "mehidi.jpg",
     "skills": [
       "Video Editing",
       "Event Management",
