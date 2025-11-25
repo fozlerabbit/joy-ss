@@ -59,6 +59,25 @@ const membersData = [
     "joinedDate": "2020-01-15",
     "bio": "I always try to do my best."
   },
+
+     {
+    "id": 201908,
+    "name": "Mahdi Hasan Shihab",
+    "role": "Social Media Manager",
+    "division": "Mymensingh",
+    "district": "Mymensingh",
+    "photo": "mehidi.jpeg",
+    "skills": [
+      "Video Editing",
+      "Event Management",
+      "Coordination"
+    ],
+    "email": "mehidi@scriptysphere.com",
+    "phone": "+880 151-6579255",
+    "joinedDate": "2025-01-10",
+    "bio": "I always try to do my best."
+  },
+   
   {
     "id": 2,
     "name": "Raiyan",
