@@ -96,20 +96,20 @@ const membersData = [
     "bio": "Leading volunteer programmes and community engagement initiatives."
   },
   {
-    "id": 3,
-    "name": "Tanvir Ahmed",
-    "role": "Programme Coordinator",
-    "division": "Chattogram",
-    "district": "Chattogram",
-    "photo": "https://ui-avatars.com/api/?name=Tanvir+Ahmed&background=8B5CF6&color=fff&size=200",
+    "id": 201901,
+    "name": "Sudipto Debnath",
+    "role": "Divisional Network Manager",
+    "division": "Khulna",
+    "district": "Satkhira",
+    "photo": "sudipto.jpeg",
     "skills": [
       "Project Management",
-      "Coding",
+      "Leadership",
       "Training"
     ],
-    "email": "tanvir@scriptysphere.org",
-    "phone": "+880 1800-234567",
-    "joinedDate": "2020-06-10",
+    "email": "sudipto.debnath@scriptysphere.comp",
+    "phone": "+880 1850-224801",
+    "joinedDate": "2024-06-10",
     "bio": "Coordinating educational programmes and skill development workshops."
   },
   {
