@@ -101,7 +101,7 @@ const membersData = [
     "role": "Divisional Network Manager",
     "division": "Khulna",
     "district": "Satkhira",
-    "photo": "sudipto.jpeg",
+    "photo": "sudipto.jpg",
     "skills": [
       "Project Management",
       "Leadership",
