@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolarSentry</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.7; background: #f4f6f8; colour: #222; }
+    header { background: #083b6e; padding: 2rem 1rem; text-align: centre; colour: #fff; }
+    header h1 { font-size: 2.4rem; }
+    nav { margin-top: 1rem; }
+    nav a { margin: 0 1rem; colour: #fff; text-decoration: none; font-weight: bold; }
+    section { padding: 3rem 1.2rem; max-width: 1200px; margin: auto; }
+    .hero { display: flex; flex-direction: column; gap: 2rem; text-align: centre; }
+    .hero img { width: 100%; max-width: 550px; margin: auto; border-radius: 12px; }
+    .hero-text h2 { font-size: 2rem; colour: #083b6e; margin-bottom: 1rem; }
+    .hero-text p { font-size: 1.1rem; }
+
+    /* Cards and grids */
+    .grid { display: grid; gap: 2rem; }
+    .card { background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { margin-bottom: 1.5rem; colour: #083b6e; text-align: centre; }
+    h3 { margin-bottom: .7rem; colour: #0a4f78; }
+
+    /* Responsive Grid */
+    @media (min-width: 768px) {
+      .hero { flex-direction: row; text-align: left; align-items: centre; }
+      .hero-text { flex: 1; }
+      .hero img { flex: 1; }
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+      .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    footer { text-align: centre; padding: 1.5rem; background: #083b6e; colour: #fff; margin-top: 3rem; }
+    /* Animations */
+    .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn .8s forwards; }
+    @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Dark mode */
+    body.dark { background: #0e1116; colour: #e5e5e5; }
+    body.dark header, body.dark footer { background: #020b18; }
+    body.dark .card { background: #1b1f27; colour: #e5e5e5; }
+
+    .theme-toggle { cursor: pointer; padding: .5rem 1rem; border-radius: 6px; background: #fff; colour: #083b6e; font-size: .9rem; float: right; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SolarSentry</h1>
+  <p>Transforming Rooftops into Solar-powered EV Charging Networks</p>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Smart Solar Infrastructure for Bangladesh’s Urban Mobility</h2>
+    <p>SolarSentry solves the unauthorised EV charging crisis by using unused rooftop spaces to power authorised, clean and cost-efficient charging and battery-swapping hubs for EV autorickshaws.</p>
+    <p>Designed for Dhaka’s density, built for national scalability.</p>
+  </div>
+  <img src="https://via.placeholder.com/550x350" alt="Rooftop solar panels powering EV charging station" />
+</section>
+
+<section id="features">
+  <h2>Key Features</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Optimised Solar Utilisation</h3>
+      <p>Rooftop solar harvesting tailored for maximum energy yield, even in congested urban zones.</p>
+    </div>
+    <div class="card">
+      <h3>Authorised Charging Stations</h3>
+      <p>Ground-floor EV charging points reduce grid theft and provide regulated, stable service.</p>
+    </div>
+    <div class="card">
+      <h3>Battery Swap Network</h3>
+      <p>Fast, reliable swapping ensures autorickshaws return to roads within minutes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>How SolarSentry Works</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>1. Rooftop Solar Installation</h3>
+      <p>Unused building rooftops in Dhaka and other cities are fitted with high-efficiency solar arrays.</p>
+    </div>
+    <div class="card">
+      <h3>2. Energy Distribution</h3>
+      <p>Solar energy is channelled to ground floor authorised charging stations through smart inverters.</p>
+    </div>
+    <div class="card">
+      <h3>3. Battery Charging & Storage</h3>
+      <p>Dedicated rooms charge and store batteries for the swap network operated by trained teams.</p>
+    </div>
+    <div class="card">
+      <h3>4. EV Swapping & Charging</h3>
+      <p>Autorickshaw drivers either charge directly or request a quick battery swap at partner hubs.</p>
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <h2>Why It Matters</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Reduced Grid Pressure</h3>
+      <p>Mitigates Bangladesh’s electricity theft and peak-load instability.</p>
+    </div>
+    <div class="card">
+      <h3>Lower Driver Cost</h3>
+      <p>Affordable subscription or per-swap model cuts daily EV operation expenses.</p>
+    </div>
+    <div class="card">
+      <h3>Urban Sustainability</h3>
+      <p>Advances national renewable energy goals under ICT Division & Sustainable Development policies.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="card">
+    <p><strong>Website:</strong> www.scriptysphere.org/SolarSentry</p>
+    <p><strong>Address:</strong> Dishari Zinnia Garden, Senpara Parbata, Mirpur-10, Dhaka-1216</p>
+    <p><strong>Email:</strong> contact@scriptysphere.org</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 SolarSentry. All rights reserved.</p>
+</footer>
+
+<script>
+  /* Fade-in animation for sections */
+  const sections = document.querySelectorAll('section');
+  const reveal = () => {
+    const trigger = window.innerHeight * 0.85;
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < trigger) sec.classList.add('fade-in');
+    });
+  };
+  window.addEventListener('scroll', reveal);
+  reveal();
+
+  /* Theme toggle */
+  function toggleTheme() {
+    document.body.classList.toggle('dark');
+  }
+</script>
+</body>
+</html>
