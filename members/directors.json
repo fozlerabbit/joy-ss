@@ -1,0 +1,72 @@
+[
+  {
+    "membershipId": "SSDIRBD001",
+    "name": "Fozle Rabbi",
+    "role": "Founder & CEO",
+    "country": "Bangladesh",
+    "photo": "https://ui-avatars.com/api/?name=Fozle+Rabbi&background=0EA5E9&color=fff&size=200&bold=true",
+    "skills": ["Leadership", "Strategy", "Vision", "Innovation"],
+    "email": "fozle.rabbi@scriptysphere.com",
+    "joinYear": 2018
+  },
+  {
+    "membershipId": "SSDIRBD002",
+    "name": "Tamim Ahmed",
+    "role": "Chief Technology Officer",
+    "country": "Bangladesh",
+    "photo": "https://ui-avatars.com/api/?name=Tamim+Ahmed&background=8B5CF6&color=fff&size=200&bold=true",
+    "skills": ["Technology", "Architecture", "Development", "AI/ML"],
+    "email": "tamim.ahmed@scriptysphere.com",
+    "joinYear": 2019
+  },
+  {
+    "membershipId": "SSDIRBD003",
+    "name": "Nusrat Jahan",
+    "role": "Director of Operations",
+    "country": "Bangladesh",
+    "photo": "https://ui-avatars.com/api/?name=Nusrat+Jahan&background=10B981&color=fff&size=200&bold=true",
+    "skills": ["Operations", "Management", "Efficiency", "Process"],
+    "email": "nusrat.jahan@scriptysphere.com",
+    "joinYear": 2019
+  },
+  {
+    "membershipId": "SSDIRBD004",
+    "name": "Rafiul Islam",
+    "role": "Director of Communications",
+    "country": "Bangladesh",
+    "photo": "https://ui-avatars.com/api/?name=Rafiul+Islam&background=F59E0B&color=fff&size=200&bold=true",
+    "skills": ["Communications", "Public Relations", "Media", "Strategy"],
+    "email": "rafiul.islam@scriptysphere.com",
+    "joinYear": 2020
+  },
+  {
+    "membershipId": "SSDIRIN001",
+    "name": "Priya Sharma",
+    "role": "Director of Global Partnerships",
+    "country": "India",
+    "photo": "https://ui-avatars.com/api/?name=Priya+Sharma&background=FF6B35&color=fff&size=200&bold=true",
+    "skills": ["Partnerships", "Networking", "Business Development", "Strategy"],
+    "email": "priya.sharma@scriptysphere.com",
+    "joinYear": 2021
+  },
+  {
+    "membershipId": "SSDIRPK001",
+    "name": "Ahmed Hassan",
+    "role": "Director of Innovation",
+    "country": "Pakistan",
+    "photo": "https://ui-avatars.com/api/?name=Ahmed+Hassan&background=01411C&color=fff&size=200&bold=true",
+    "skills": ["Innovation", "Research", "Technology", "Development"],
+    "email": "ahmed.hassan@scriptysphere.com",
+    "joinYear": 2021
+  },
+  {
+    "membershipId": "SSDIRNP001",
+    "name": "Suman Thapa",
+    "role": "Director of Community Engagement",
+    "country": "Nepal",
+    "photo": "https://ui-avatars.com/api/?name=Suman+Thapa&background=DC143C&color=fff&size=200&bold=true",
+    "skills": ["Community", "Engagement", "Youth Development", "Empowerment"],
+    "email": "suman.thapa@scriptysphere.com",
+    "joinYear": 2022
+  }
+]
