@@ -372,6 +372,7 @@ function createMemberCard(member, index) {
   
   card.innerHTML = `
     <div class="member-card-header">
+    <div class="director-badge">${member.membershipId}</div>
       <div class="member-flag">${countryFlags[member.country] || '🌍'}</div>
       <div class="member-avatar-wrapper">
         <img 
