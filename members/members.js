@@ -926,7 +926,7 @@ function closeModal() {
 // ========== SHARE MEMBER ==========
 window.shareMember = function(membershipId) {
   const baseUrl = window.location.origin + window.location.pathname;
-  const shareUrl = `${baseUrl}profile/?id=${membershipId}`;
+  const shareUrl = `${baseUrl}?id=${membershipId}`;
   
   if (navigator.share) {
     navigator.share({
