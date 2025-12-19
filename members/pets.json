@@ -1,0 +1,112 @@
+[
+  {
+    "membershipId": "SSPETCAT001",
+    "name": "Tukush Rahman Gattu",
+    "role": "Chief Morale Officer",
+    "species": "Cat",
+    "country": "Bangladesh",
+    "photo": "https://placekitten.com/400/400",
+    "skills": ["Meowing", "Sleeping", "Eating", "Cuteness"],
+    "joinYear": 2025,
+    "quote": "Meow meow meow! (Translation: Work hard, nap harder)",
+    "bio": "The official mascot of ScriptySphere Bangladesh. Expert at boosting team morale through strategic naps and adorable meows. Known for sitting on keyboards during important meetings and providing emotional support to stressed team members."
+  },
+  {
+    "membershipId": "SSPETDOG001",
+    "name": "Buddy",
+    "role": "Security Chief",
+    "species": "Dog",
+    "country": "Bangladesh",
+    "photo": "https://placedog.net/400/400",
+    "skills": ["Guarding", "Playing", "Loyalty", "Fetching"],
+    "joinYear": 2024,
+    "quote": "Woof! Always loyal, always protecting, always ready to play!",
+    "bio": "Guardian of the ScriptySphere office. Ensures everyone takes proper break times through persistent play requests. Expert at detecting treats from 100 meters away and providing unconditional love to all team members."
+  },
+  {
+    "membershipId": "SSPETCAT002",
+    "name": "Luna",
+    "role": "Creative Consultant",
+    "species": "Cat",
+    "country": "India",
+    "photo": "https://placekitten.com/401/401",
+    "skills": ["Inspiration", "Purring", "Observation", "Wisdom"],
+    "joinYear": 2024,
+    "quote": "Purr-fection comes from patience and nine lives of experience",
+    "bio": "Provides creative inspiration by sitting on keyboards at critical moments. Known for excellent judgment in team dynamics and the ability to sense when someone needs a comforting purr. Meditation expert and stress-relief specialist."
+  },
+
+  {
+    "membershipId": "SSPETCAT001",
+    "name": "Tukush Rahman Gattu",
+    "role": "Chief Morale Officer",
+    "species": "Cat",
+    "country": "Bangladesh",
+    "photo": "https://placekitten.com/400/400",
+    "skills": ["Meowing", "Sleeping", "Eating", "Cuteness"],
+    "joinYear": 2025,
+    "quote": "Meow meow meow! (Translation: Work hard, nap harder)",
+    "bio": "The official mascot of ScriptySphere Bangladesh. Expert at boosting team morale through strategic naps and adorable meows. Known for sitting on keyboards during important meetings and providing emotional support to stressed team members."
+  },
+  {
+    "membershipId": "SSPETDOG001",
+    "name": "Buddy",
+    "role": "Security Chief",
+    "species": "Dog",
+    "country": "Bangladesh",
+    "photo": "https://placedog.net/400/400",
+    "skills": ["Guarding", "Playing", "Loyalty", "Fetching"],
+    "joinYear": 2024,
+    "quote": "Woof! Always loyal, always protecting, always ready to play!",
+    "bio": "Guardian of the ScriptySphere office. Ensures everyone takes proper break times through persistent play requests. Expert at detecting treats from 100 meters away and providing unconditional love to all team members."
+  },
+  {
+    "membershipId": "SSPETCAT002",
+    "name": "Luna",
+    "role": "Creative Consultant",
+    "species": "Cat",
+    "country": "India",
+    "photo": "https://placekitten.com/401/401",
+    "skills": ["Inspiration", "Purring", "Observation", "Wisdom"],
+    "joinYear": 2024,
+    "quote": "Purr-fection comes from patience and nine lives of experience",
+    "bio": "Provides creative inspiration by sitting on keyboards at critical moments. Known for excellent judgment in team dynamics and the ability to sense when someone needs a comforting purr. Meditation expert and stress-relief specialist."
+  },
+
+  {
+    "membershipId": "SSPETCAT001",
+    "name": "Tukush Rahman Gattu",
+    "role": "Chief Morale Officer",
+    "species": "Cat",
+    "country": "Bangladesh",
+    "photo": "https://placekitten.com/400/400",
+    "skills": ["Meowing", "Sleeping", "Eating", "Cuteness"],
+    "joinYear": 2025,
+    "quote": "Meow meow meow! (Translation: Work hard, nap harder)",
+    "bio": "The official mascot of ScriptySphere Bangladesh. Expert at boosting team morale through strategic naps and adorable meows. Known for sitting on keyboards during important meetings and providing emotional support to stressed team members."
+  },
+  {
+    "membershipId": "SSPETDOG001",
+    "name": "Buddy",
+    "role": "Security Chief",
+    "species": "Dog",
+    "country": "Bangladesh",
+    "photo": "https://placedog.net/400/400",
+    "skills": ["Guarding", "Playing", "Loyalty", "Fetching"],
+    "joinYear": 2024,
+    "quote": "Woof! Always loyal, always protecting, always ready to play!",
+    "bio": "Guardian of the ScriptySphere office. Ensures everyone takes proper break times through persistent play requests. Expert at detecting treats from 100 meters away and providing unconditional love to all team members."
+  },
+  {
+    "membershipId": "SSPETCAT002",
+    "name": "Luna",
+    "role": "Creative Consultant",
+    "species": "Cat",
+    "country": "India",
+    "photo": "https://placekitten.com/401/401",
+    "skills": ["Inspiration", "Purring", "Observation", "Wisdom"],
+    "joinYear": 2024,
+    "quote": "Purr-fection comes from patience and nine lives of experience",
+    "bio": "Provides creative inspiration by sitting on keyboards at critical moments. Known for excellent judgment in team dynamics and the ability to sense when someone needs a comforting purr. Meditation expert and stress-relief specialist."
+  }
+]
