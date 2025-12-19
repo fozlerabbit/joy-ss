@@ -41,6 +41,7 @@
   <link rel="stylesheet" href="/assets/css/footer.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
+
   <!-- PWA Manifest -->
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#0EA5E9">
@@ -262,55 +263,70 @@
 <br>
 <br>
 <br>
+  <!-- Cursor Glow Effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  
   <!-- Animated Background -->
-  <div class="animated-bg">
-    <div class="bg-shape shape-1"></div>
-    <div class="bg-shape shape-2"></div>
-    <div class="bg-shape shape-3"></div>
+  <div class="animated-background">
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="gradient-sphere sphere-3"></div>
+    <canvas id="particleCanvas"></canvas>
   </div>
-
+  
   <!-- Hero Section -->
   <section class="hero-section" id="hero">
     <div class="container">
       <div class="hero-content" data-aos="fade-up">
+        
+        <!-- Hero Badge -->
         <div class="hero-badge">
-          <span class="badge-pulse"></span>
-          <span>Community Network</span>
+          <span class="pulse-dot"></span>
+          <span>Global Community</span>
         </div>
         
+        <!-- Hero Title -->
         <h1 class="hero-title">
-          Meet Our <span style="color: black;">300+ Members</span>
+          Meet Our <span class="gradient-text">500+ Members</span>
+          <br>
+          <span class="subtitle-text">Across 8+ Countries</span>
         </h1>
-<!--         
-        <h1 class="hero-title">
-          Meet Our <span class="gradient-text" style="color: black;">300+ Members</span>
-        </h1> -->
-
-
-
+        
+        <!-- Hero Description -->
         <p class="hero-description">
-          Connect with passionate youth innovators, tech enthusiasts, and changemakers 
-          from all 64 districts of Bangladesh. Join our growing community today!
+          Join a vibrant community of young innovators, tech enthusiasts, and changemakers 
+          from Bangladesh, India, Pakistan, Nepal, Sri Lanka, and beyond. Together, we're 
+          scripting the future through technology and innovation.
         </p>
         
+        <!-- Hero Stats -->
         <div class="hero-stats">
-          <div class="stat-card">
-            <span class="stat-number" data-count="300">0</span>
-            <span class="stat-label">Active Members</span>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-icon">🌍</div>
+            <div class="stat-number" data-count="8">0</div>
+            <div class="stat-label">Countries</div>
           </div>
-          <div class="stat-card">
-            <span class="stat-number" data-count="8">0</span>
-            <span class="stat-label">Divisions</span>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-icon">👥</div>
+            <div class="stat-number" data-count="500">0</div>
+            <div class="stat-label">Active Members</div>
           </div>
-          <div class="stat-card">
-            <span class="stat-number" data-count="64">0</span>
-            <span class="stat-label">Districts</span>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-number" data-count="64">0</div>
+            <div class="stat-label">Districts (BD)</div>
+          </div>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="stat-icon">🤝</div>
+            <div class="stat-number" data-count="7">0</div>
+            <div class="stat-label">Directors</div>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
-
+  
   <!-- Search & Filter Section -->
   <section class="filter-section" id="filters">
     <div class="container">
@@ -326,7 +342,7 @@
             type="search" 
             id="memberSearch" 
             class="search-input" 
-            placeholder="Search members by name, role, or skills..."
+            placeholder="Search members by name, role, country, or skills..."
             aria-label="Search members"
           >
         </div>
@@ -342,49 +358,74 @@
             All Members
           </button>
           
+          <button class="tab-btn" data-category="directors" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            Central Directors
+          </button>
+          
+          <button class="tab-btn" data-category="countries" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            By Country
+          </button>
+          
           <button class="tab-btn" data-category="divisions" aria-pressed="false">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
               <circle cx="12" cy="10" r="3"/>
             </svg>
-            By Division (8)
+            By Division (BD)
           </button>
           
-          <button class="tab-btn" data-category="districts" aria-pressed="false">
+          <button class="tab-btn" data-category="pets" aria-pressed="false">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-              <polyline points="9 22 9 12 15 12 15 22"/>
+              <circle cx="12" cy="10" r="3"/>
+              <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/>
             </svg>
-            By District (64)
+            Honorary Pets
           </button>
         </div>
         
-        <!-- Sort Dropdown -->
-        <select id="sortSelect" class="sort-select" aria-label="Sort members">
-          <option value="name-asc">Name (A-Z)</option>
-          <option value="name-desc">Name (Z-A)</option>
-          <option value="date-new">Newest First</option>
-          <option value="date-old">Oldest First</option>
-          <option value="role">By Role</option>
-        </select>
+        <!-- Sort & Filter Options -->
+        <div class="filter-options">
+          <select id="sortSelect" class="filter-select" aria-label="Sort members">
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="date-new">Newest First</option>
+            <option value="date-old">Oldest First</option>
+            <option value="country">By Country</option>
+          </select>
+          
+          <select id="countryFilter" class="filter-select" aria-label="Filter by country">
+            <option value="all">All Countries</option>
+          </select>
+        </div>
         
       </div>
     </div>
   </section>
-
-  <!-- Content Sections -->
+  
+  <!-- Main Content -->
   <main class="main-content">
+    
+    <!-- Member Count -->
+    <div class="container">
+      <div class="member-count-bar" data-aos="fade-up">
+        <p>Showing <strong id="memberCount">0</strong> members</p>
+      </div>
+    </div>
     
     <!-- All Members View -->
     <section class="content-section active" id="allMembersSection">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2>All Members</h2>
-          <p class="member-count">Showing <span id="memberCount">0</span> members</p>
-        </div>
-        
         <div id="membersGrid" class="members-grid">
-          <!-- Members will be loaded here dynamically -->
+          <!-- Members loaded dynamically -->
         </div>
         
         <!-- No Results -->
@@ -394,7 +435,7 @@
           <p>Try adjusting your search or filters</p>
         </div>
         
-        <!-- Load More Button -->
+        <!-- Load More -->
         <div class="load-more-wrapper" id="loadMoreWrapper">
           <button class="btn-load-more" id="loadMoreBtn">
             <span>Load More Members</span>
@@ -405,64 +446,53 @@
         </div>
       </div>
     </section>
-
-    <!-- Divisions View -->
+    
+    <!-- Directors View -->
+    <section class="content-section" id="directorsSection">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Central Directors</h2>
+          <p>The leadership team guiding ScriptySphere's global vision</p>
+        </div>
+        <div id="directorsGrid" class="directors-grid"></div>
+      </div>
+    </section>
+    
+    <!-- Countries View -->
+    <section class="content-section" id="countriesSection">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Members by Country</h2>
+          <p>Our global reach across 8+ nations</p>
+        </div>
+        <div id="countriesGrid" class="countries-grid"></div>
+      </div>
+    </section>
+    
+    <!-- Divisions View (Bangladesh) -->
     <section class="content-section" id="divisionsSection">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
-          <button class="back-btn" id="backToDivisions" style="display: none;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M19 12H5M12 19l-7-7 7-7"/>
-            </svg>
-            Back to Divisions
-          </button>
-          <h2 id="divisionTitle">Divisions of Bangladesh</h2>
-          <p>Select a division to view members</p>
+          <h2>Bangladesh Divisions</h2>
+          <p>Members across all 8 divisions</p>
         </div>
-        
-        <div id="divisionsGrid" class="divisions-grid">
-          <!-- Divisions will be loaded here -->
-        </div>
-        
-        <div id="districtsGrid" class="districts-grid" style="display: none;">
-          <!-- Districts will be loaded here when division is selected -->
-        </div>
-        
-        <div id="divisionMembersGrid" class="members-grid" style="display: none;">
-          <!-- Members from selected division/district will be shown here -->
-        </div>
-        
-        <!-- Empty State for Division/District -->
-        <div id="emptyDivision" class="empty-state" style="display: none;">
-          <div class="empty-icon">🌟</div>
-          <h3>Be the First Member!</h3>
-          <p id="emptyMessage">No members yet from this area. Join ScriptySphere and become the first member!</p>
-          <button class="btn-join" onclick="window.location.href='#join'">
-            <span>Join ScriptySphere</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </button>
-        </div>
+        <div id="divisionsGrid" class="divisions-grid"></div>
       </div>
     </section>
-
-    <!-- Districts View (when clicking "By District") -->
-    <section class="content-section" id="districtsSection">
+    
+    <!-- Pets View -->
+    <section class="content-section" id="petsSection">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
-          <h2>All 64 Districts of Bangladesh</h2>
-          <p>Select a district to view members</p>
+          <h2>Honorary Pet Members 🐾</h2>
+          <p>Our beloved mascots and companions</p>
         </div>
-        
-        <div id="allDistrictsGrid" class="all-districts-grid">
-          <!-- All 64 districts will be loaded here -->
-        </div>
+        <div id="petsGrid" class="pets-grid"></div>
       </div>
     </section>
-
+    
   </main>
-
+  
   <!-- Member Detail Modal -->
   <div class="modal" id="memberModal" role="dialog" aria-labelledby="memberModalTitle" aria-hidden="true">
     <div class="modal-overlay" id="modalOverlay"></div>
@@ -473,24 +503,21 @@
           <line x1="6" y1="6" x2="18" y2="18"/>
         </svg>
       </button>
-      
-      <div class="modal-body">
-        <!-- Member details will be loaded here dynamically -->
+      <div class="modal-body" id="modalBody">
+        <!-- Member details loaded dynamically -->
       </div>
     </div>
   </div>
-
-  <!-- Share Toast Notification -->
+  
+  <!-- Share Toast -->
   <div class="toast" id="shareToast" role="alert" aria-live="polite">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
       <polyline points="22 4 12 14.01 9 11.01"/>
     </svg>
-    <span>Link copied to clipboard!</span>
+    <span>Profile link copied to clipboard!</span>
   </div>
-
-
-
+  
   
 
   <!-- Footer -->
@@ -502,6 +529,7 @@
   <script type="module" src="/assets/js/footer.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script type="module" src="/assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 </body>
 </html>
