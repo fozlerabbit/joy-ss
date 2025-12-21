@@ -603,7 +603,7 @@ body {
 }
 
 .error-path span {
-  color: var(--color-primary);
+  color: #ffffff;
   font-weight: 600;
 }
 
