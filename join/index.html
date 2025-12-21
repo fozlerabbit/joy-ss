@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ScriptySphere URL Shortener - Securely redirecting you to your destination">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="ScriptySphere - Redirecting...">
+  <meta property="og:description" content="You are being securely redirected to your destination">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ssl.gstatic.com/docs/forms/forms_logo_2x.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ScriptySphere - Redirecting...">
+  <meta name="twitter:description" content="You are being securely redirected to your destination">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0EA5E9">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌐%3C/text%3E%3C/svg%3E">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="redirect.css">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://docs.google.com">
+  
+  <title>Redirecting... | ScriptySphere</title>
+</head>
+<body>
+  <!-- Background Elements -->
+  <div class="bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+  
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas" class="particle-canvas"></canvas>
+  
+  <!-- Main Content -->
+  <main class="redirect-container">
+    <!-- Logo Section -->
+    <div class="logo-wrapper">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h1 class="logo-text">
+        <span class="gradient-text">ScriptySphere</span>
+      </h1>
+    </div>
+    
+    <!-- Status Card -->
+    <div class="status-card glass-card">
+      <!-- Loading Spinner -->
+      <div class="loader-wrapper">
+        <div class="loader">
+          <div class="loader-circle"></div>
+          <div class="loader-circle"></div>
+          <div class="loader-circle"></div>
+        </div>
+      </div>
+      
+      <!-- Status Text -->
+      <div class="status-content">
+        <h2 class="status-title" id="statusTitle">Redirecting Securely</h2>
+        <p class="status-message" id="statusMessage">Please wait while we prepare your destination...</p>
+        
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <!-- Countdown -->
+        <div class="countdown">
+          <span class="countdown-label">Redirecting in</span>
+          <span class="countdown-number" id="countdown">3</span>
+          <span class="countdown-label">seconds</span>
+        </div>
+      </div>
+      
+      <!-- Destination Info -->
+      <div class="destination-info">
+        <div class="destination-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 13C10.4295 13.5741 10.9774 14.0492 11.6066 14.3929C12.2357 14.7367 12.9315 14.9411 13.6467 14.9923C14.3618 15.0435 15.0796 14.9404 15.7513 14.6897C16.4231 14.4391 17.0331 14.047 17.54 13.54L20.54 10.54C21.4508 9.59698 21.9548 8.33397 21.9434 7.02299C21.932 5.71201 21.4061 4.45794 20.4791 3.53091C19.5521 2.60389 18.298 2.07802 16.987 2.06663C15.676 2.05523 14.413 2.55921 13.47 3.47L11.75 5.18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 11C13.5705 10.4259 13.0226 9.95083 12.3934 9.60707C11.7642 9.26331 11.0685 9.05889 10.3533 9.00767C9.63819 8.95645 8.92037 9.05963 8.24861 9.31029C7.57685 9.56095 6.96684 9.95303 6.45996 10.46L3.45996 13.46C2.54917 14.403 2.04519 15.666 2.05659 16.977C2.06798 18.288 2.59385 19.5421 3.52087 20.4691C4.4479 21.3961 5.70197 21.922 7.01295 21.9334C8.32393 21.9448 9.58694 21.4408 10.53 20.53L12.24 18.82" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="destination-text">
+          <span class="destination-label">Destination:</span>
+          <a href="#" class="destination-url" id="destinationUrl" target="_blank" rel="noopener noreferrer">
+            Loading...
+          </a>
+        </div>
+      </div>
+      
+      <!-- Safety Badge -->
+      <div class="safety-badge">
+        <svg class="safety-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Secure Redirect</span>
+      </div>
+    </div>
+    
+    <!-- Footer Info -->
+    <div class="footer-info">
+      <p class="footer-text">
+        Powered by <span class="gradient-text">ScriptySphere</span>
+      </p>
+      <p class="footer-text small">
+        Having trouble? <a href="mailto:support@scriptysphere.org" class="footer-link">Contact Support</a>
+      </p>
+    </div>
+  </main>
+  
+  <!-- Scripts -->
+  <script src="redirect.js"></script>
+</body>
+</html>
